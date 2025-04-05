@@ -1,0 +1,21 @@
+# Execute estes comandos no terminal do SaveInCloud:
+
+cd /home/jelastic/
+git clone https://github.com/DevJosueMonteiro/xlsx-Manage.git
+cd xlsx-Manage
+
+# Criar o arquivo .env
+cat > .env << 'EOF'
+SUPABASE_URL=https://gqugppbgrlamghpieche.supabase.co
+SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdxdWdwcGJncmxhbWdocGllY2hlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM2MjEyODYsImV4cCI6MjA1OTE5NzI4Nn0.CJTfLTeHjCweBve-uAaE-80ehqFiHFpTN2CXeh2g418
+EXTERNAL_API_URL=https://dev.managetour.app.br/webrun/wsIncluirFile.rule?sys=PGT
+PORT=3001
+API_USERNAME=master
+API_PASSWORD=3019wo01
+EOF
+
+# Instalar dependências
+npm install
+
+# Iniciar o servidor
+npm start 

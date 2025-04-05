@@ -1,0 +1,165 @@
+POST
+wsIncluirFile
+https://dev.managetour.app.br/webrun/wsIncluirFile.rule?sys=PGT
+Criar File (Reserva) no backoffice do ManageTour - Cliente
+
+AUTHORIZATION
+Basic Auth
+Username
+<username>
+
+Password
+<password>
+
+PARAMS
+sys
+PGT
+
+Body
+raw
+View More
+{
+    "Operacao": "C",
+    "idReservaIntegrador": 1101,
+    "idCliente": "11189127000117",
+    "nomePaxTitular": "EDUARDO SILVA",
+    "idHotelPousada": 14,
+    "dataInicioServicos": "2023-05-15T12:00:00",
+    "dataFimServicos": "2023-05-15T23:59:59",
+    "ADT": 2,
+    "CHD": 0,
+    "INF": 0,
+    "SNR": 0,
+    "FREE": 0,
+    "Mercado": 1,
+    "Idioma": "POR",
+    "localizadorCliente": 1101,
+    "observacoes": "teste de observacao do file",
+    "idEvento": 0,
+    "idGrupo": 0,
+    "fileGrupo": "",
+    "email": "eduardo@penhasolutions.com.br",
+    "telefone": "85999183470",
+    "cpfPaxTitular": "53295361037",
+    "observacoesInternas": "deste de observacao interna do file",
+    "idCanalServicoFile": 4,
+    "idEmissor":7,
+    "paxsFile": [
+        {
+            "primeiroNome": "EDUARDO",
+            "sobrenome": "SILVA",
+            "tipo": "ADT",
+            "idade": 43,
+            "documento": "367674622",
+            "cpf": "53295361037",
+            "dataNascimento": "2023-05-03",
+            "telefoneCelular": "85999183470",
+            "email":"eduardo@penhasolutions.com.br.com.br",
+            "idPaxIntegrador": 1234,
+            "paxTitular": true
+        },
+        {
+            "primeiroNome": "MARIA",
+            "sobrenome": "PENHA DA SILVA",
+            "tipo": "ADT",
+            "idade": 48,
+            "documento": "525273753",
+            "cpf": "",
+            "dataNascimento": "2023-05-03",
+            "telefoneCelular": "11953920196",
+            "email":"vania@teste.com.br",
+            "idPaxIntegrador": 1235,
+            "paxTitular": false
+        }
+    ],
+    "servicosFile": [
+        {
+            "idServicoReceptivo":17,
+            "dataInicioServico":"2023-05-15T12:00:00",
+            "dataFimServico": "2023-05-15T23:59:59",
+            "aeroporto": "FOR",
+            "voo": "G31980",
+            "horaServicoVoo": null,
+            "idHotelPousada": 14,
+            "idTipoServico": 1,
+            "idModalidadeServico": 1,
+            "tipoContratacao": 1,
+            "idTipoTransporte": null,
+            "adt": 2,
+            "chd": 0,
+            "inf": 0,
+            "snr": 0,
+            "idVendedor": null,
+            "idReciboInterno": null,
+            "idFormaPagto": null,
+            "idTransacaoExterna": 3403,
+            "observacoes": "teste de observacao no transfer in",
+            "idIntermediador": null,
+            "tarifaADT": "50,00",
+            "tarifaSNR": "25,00",
+            "tarifaCHD": "25,00",
+            "tarifaServico": "0,00",
+            "idCanalServicoFile": 4,
+            "idCupomDesconto": null,
+            "idLocalPickUp": 14,
+            "idLocalDropOff": 14,
+            "idTurno": 0,
+            "tipoNegocio":"B2B",
+            "paxsServico": [
+                {
+                "idPaxIntegrador":"1234",
+                "nomePax":"eduardo silva"
+                },
+                {
+                    "idPaxIntegrador":"1235",
+                    "nomePax":"eduardo silva"
+                    }
+            ]
+
+        },
+        {
+            "idServicoReceptivo":18,
+            "dataInicioServico":"2023-05-15T12:00:00",
+            "dataFimServico": "2023-05-15T23:59:59",
+            "aeroporto": "FOR",
+            "voo": "G31980",
+            "horaServicoVoo": null,
+            "idHotelPousada": 14,
+            "idTipoServico": 1,
+            "idModalidadeServico": 1,
+            "tipoContratacao": 1,
+            "idTipoTransporte": null,
+            "adt": 2,
+            "chd": 0,
+            "inf": 0,
+            "snr": 0,
+            "idVendedor": null,
+            "idReciboInterno": null,
+            "idFormaPagto": null,
+            "idTransacaoExterna": 3403,
+            "observacoes": "teste de observacao no transfer out",
+            "idIntermediador": null,
+            "tarifaADT": "50,00",
+            "tarifaSNR": "25,00",
+            "tarifaCHD": "25,00",
+            "tarifaServico": "0,00",
+            "idCanalServicoFile": 4,
+            "idCupomDesconto": null,
+            "idLocalPickUp": 14,
+            "idLocalDropOff": 14,
+            "idTurno": 0,
+            "tipoNegocio":"B2B",
+            "paxsServico": [
+                {
+                "idPaxIntegrador":"1234",
+                "nomePax":"eduardo silva"
+                },
+                {
+                    "idPaxIntegrador":"1235",
+                    "nomePax":"eduardo silva"
+                    }
+            ]
+
+        }
+    ]
+}
