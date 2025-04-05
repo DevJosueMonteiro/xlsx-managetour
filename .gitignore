@@ -1,2 +1,19 @@
-xlsx-manage.tar.gz
+# Dependencies
+node_modules/
 build/frontend/node_modules/
+
+# Build
+.next/
+out/
+
+# Environment
+.env
+.env.local
+
+# Large files
+xlsx-manage.tar.gz
+*.tar.gz
+
+# OS
+.DS_Store
+Thumbs.db
